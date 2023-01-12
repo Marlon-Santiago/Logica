@@ -2,32 +2,37 @@
 
 <script>
 
+    function pula2Linhas() {
+        document.write('<br>');
+        document.write('<br>')
+    }
+
+    function pula1Linha() {
+        document.write('<br>')
+    }
+    
+    function mostra1(frase) {
+        document.write(frase);
+        pula1Linha()
+    }
+
+    function mostra2(frase) {
+        document.write(frase)
+        pula2Linhas()
+    }
+
     var ano = 2022;
-
-    alert('Qual a minha idade ?'); 
-    alert('Minha idade é 28 sera que você acertou ?')
-
-    document.write('<br>')
     
-    document.write('Dica --> Eu nasci em ')
-    document.write(2022 - 28 + '<br>')
-    
-    document.write('<br>')
+    mostra1('Flávio nasceu em' + (2022 - 38));
+    mostra1('Joaquin nasceu em' + (2022 - 50));
+    mostra2('Barney nasceu em ' + (2022 - 25));
 
-    document.write('Flávio nasceu em' + (2022 - 38) + '<br>')
-    document.write('Joaquin nasceu em' + (2022 - 50) + '<br>')
-    document.write('Barney nasceu em ' + (2022 - 25) + '<br>')
+    mostra1('Flavio tem ' + (ano - 1977));
+    mostra1('Joaquim tem ' + (ano - 1996));
+    mostra2('Barney tem ' + (ano - 1976));
 
-    document.write('<br>')
-
-    document.write('Flavio tem ' + (ano - 1977) + 'anos' + '<br>');
-    document.write('Joaquim tem' + (ano - 1996) + 'anos' + '<br>');
-    document.write('Barney tem' + (ano - 1976) + 'anos' + '<br>');
-
-    document.write('<br>')
-
-    document.write('A media de idade entre Flávio, Joaquim e Barney é ' 
-    + (38 + 50 +25) / 3 + '<br>' + '<br>');
+    mostra2('A media de idade entre Flávio, Joaquim e Barney é ' 
+    + (38 + 50 +25) / 3 );
 
     var idadeFlavio = 39;
     var idadeJoaquin = 20;
@@ -35,15 +40,15 @@
 
     var media = (idadeFlavio + idadeJoaquin + idadeBarney) / 3
 
-    document.write('A idade media é ' + Math.round(media) + '<br>' + '<br>');
+    mostra2('A idade media é ' + Math.round(media));
 
     var nome1 = 'Flavio'
     var nome2 = 'Joaquim'
     var nome3 = 'Barney'
 
-    document.write('A idade de ' + nome1 + 'é' + idadeFlavio + '<br>')
-    document.write('A idade de ' + nome2 + 'é' + idadeJoaquin + '<br>')
-    document.write('A idade de ' + nome3 + 'é' + idadeBarney + '<br>')
+    mostra1('A idade de ' + nome1 + ' é ' + idadeFlavio)
+    mostra1('A idade de ' + nome2 + ' é ' + idadeJoaquin)
+    mostra2('A idade de ' + nome3 + ' é ' + idadeBarney)
 
      
 
