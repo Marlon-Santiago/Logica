@@ -21,6 +21,18 @@
         pula2Linhas()
     }
 
-    
+    function calculaImc(peso, altura){
+        var imc = peso / (altura * altura);
+        return imc;
+    } 
+
+    var imcFlavio = calculaImc(98, 1.80) 
+    var imcAmigo = calculaImc(90, 1.67)
+    var totalImc = (imcFlavio + imcAmigo)
+
+    document.write('A Soma dos imcs é '  + totalImc)
+
+     var peso = prompt('Digite Seu Peso ')
+     document.write('Seu peso é ' + peso)
 
 </script>
