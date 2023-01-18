@@ -30,7 +30,14 @@
     var imcAmigo = calculaImc(90, 1.67)
     var totalImc = (imcFlavio + imcAmigo)
 
-    document.write('A Soma dos imcs é '  + totalImc)
+    mostra2('A Soma dos imcs é '  + totalImc)
+
+    var nomeInformado = prompt('Digite Seu Nome')
+    var alturaInformada = prompt(nomeInformado + (' Digite Sua Altura'))
+    var pesoInformado =  prompt(nomeInformado + (' Digite Seu Peso'))
+    var imc = calculaImc(pesoInformado, alturaInformada)
+    mostra2('O Seu IMC é ' + imc)
+
 
      var peso = prompt('Digite Seu Peso ')
      document.write('Seu peso é ' + peso)
