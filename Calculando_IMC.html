@@ -26,20 +26,23 @@
         return imc;
     } 
 
-    var imcFlavio = calculaImc(98, 1.80) 
-    var imcAmigo = calculaImc(90, 1.67)
-    var totalImc = (imcFlavio + imcAmigo)
-
-    mostra2('A Soma dos imcs é '  + totalImc)
-
     var nomeInformado = prompt('Digite Seu Nome')
     var alturaInformada = prompt(nomeInformado + (' Digite Sua Altura'))
     var pesoInformado =  prompt(nomeInformado + (' Digite Seu Peso'))
     var imc = calculaImc(pesoInformado, alturaInformada)
     mostra2('O Seu IMC é ' + imc)
 
+    if( imc < 18.5) {
+        mostra1('Você Está Abaixo Do Recomendado')
+    }
 
-     var peso = prompt('Digite Seu Peso ')
-     document.write('Seu peso é ' + peso)
+    if (imc > 35) {
+        mostra1('Você Está abaixo Do Recomendado')
+    }
+
+    if (imc >= 18.5 && imc <= 35) {
+        mostra1(' Seu IMC Está EXCELENTE')
+    }
+
 
 </script>

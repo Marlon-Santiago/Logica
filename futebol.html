@@ -20,3 +20,23 @@
         document.write(frase)
         pula2Linhas()
     }
+
+    var vitorias = parseInt(prompt('Quantas Vitorias o Seu time Tem ? '))
+    var empates = parseInt(prompt('Digite o Numero de Empates do Seu Time '))
+
+    var pontos = (vitorias * 3 ) + empates
+
+    mostra2('Os Pontos Do Seu Time é ' + pontos + ' Pontos')
+
+    if (pontos > 28) {
+        mostra1('Seu Time Está Melhor Que No Ano Passado')
+    }
+
+    if (pontos < 28) {
+        mostra1('Seu Time Está Pior Que No Ano Passado')
+    }
+
+    if (pontos == 28) {
+        mostra1('Seu Time Está Igual Ao Ano Passado')
+    }
+</script>
