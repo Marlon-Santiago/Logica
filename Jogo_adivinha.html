@@ -21,14 +21,21 @@
         pula2Linhas()
     }
 
-    var numePensado = Math.round(Math.random() * 100)
-    var chute = parseInt(prompt('Digite Seu Chute'))
+    var numePensado = Math.round(Math.random() * 10)
+    var tentativas = 1
 
-    if (chute == numePensado) {
-        mostra1('Você Acertou')
-    } else {
-        mostra1('você Errou')
-    }
+    while(tentativas <= 3){
+    
+        var chute = parseInt(prompt('Digite Seu Chute'))
 
-
+        if (chute == numePensado) {
+            mostra2('Você Acertou')
+            break
+            
+        } else {
+            mostra2('você Errou')
+        }
+    tentativas = tentativas + 1    
+    }    
+mostra1('Fim')
 </script>
