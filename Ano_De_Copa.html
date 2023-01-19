@@ -5,20 +5,17 @@
         document.write('<br>')
     }
 
-    function pula1Linha() {
-        document.write('<br>')
-    }
-    
-    function mostra1(frase) {
-        document.write(frase);
-        pula1Linha()
-    }
-
     function mostra2(frase) {
         document.write(frase)
         pula2Linhas()
     }
 
-    
+    var limite = parseInt(prompt('Insira a Data limite'))
+    var anoCopa = 1930;
+
+    while(anoCopa <= limite) {
+        mostra2('Teve compa em ' + anoCopa);
+        anoCopa = anoCopa + 4;
+    }
 
 </script>
